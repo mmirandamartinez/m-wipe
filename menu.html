@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 260px;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      border: 1px solid #222;
+      border-radius: 8px;
+    }
+
+    .header {
+      border-bottom: 1px solid #222;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      color: #00bcd4;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .version {
+      font-size: 10px;
+      color: #444;
+      margin-top: 2px;
+    }
+
+    .descripcion {
+      font-size: 11px;
+      color: #777;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .descripcion strong {
+      color: #ccc;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      gap: 8px;
+    }
+
+    .stat {
+      background: #1a1a1a;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 8px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-numero {
+      font-size: 18px;
+      font-weight: 900;
+      color: #00bcd4;
+    }
+
+    .stat-label {
+      font-size: 9px;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    button#boton {
+      background: #00bcd4;
+      color: #000;
+      border: none;
+      padding: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 6px;
+      width: 100%;
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: background 0.2s;
+    }
+
+    button#boton:hover { background: #00acc1; }
+
+    button#boton.apagado {
+      background: #1a1a1a;
+      color: #444;
+      border: 1px solid #222;
+    }
+
+    .estado {
+      font-size: 10px;
+      color: #444;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    .estado.activo { color: #00bcd4; }
+
+    .separador {
+      border: none;
+      border-top: 1px solid #1e1e1e;
+      margin: 16px 0;
+    }
+
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .links a {
+      color: #444;
+      font-size: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+
+    .links a:hover { color: #00bcd4; }
+
+    .autor {
+      font-size: 10px;
+      color: #333;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .autor a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .autor a:hover { color: #00bcd4; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+      <img src="icons/icon.png" alt="M-Wipe" style="width: 28px; height: 28px;">
+      <h1>M-Wipe</h1>
+    </div>
+    <div class="version" style="text-align: center;">v1.0 — Cookie Destroyer</div>  
+  </div>
+
+  <p class="descripcion">
+    Elimina banners de cookies, muros de pago y avisos de privacidad de forma automática.
+    Usa un <strong>diccionario de 16 plataformas</strong> (Didomi, OneTrust, Cookiebot…)
+    y heurística inteligente para el resto. <strong>No acepta nada.</strong>
+  </p>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-numero" id="contador">0</div>
+      <div class="stat-label">Eliminados</div>
+    </div>
+    <div class="stat">
+      <div class="stat-numero">16</div>
+      <div class="stat-label">CMPs</div>
+    </div>
+    <div class="stat">
+      <div class="stat-numero">21</div>
+      <div class="stat-label">Idiomas</div>
+    </div>
+  </div>
+
+  <button id="boton">Activo</button>
+  <div class="estado activo" id="estado">Destruyendo en esta pestaña</div>
+
+  <hr class="separador">
+
+  <div class="links">
+    <a href="https://github.com/mmirandamartinez/m-wipe" target="_blank">GitHub</a>
+    <a href="https://mmirandamartinez.com" target="_blank">Web</a>
+    <a href="https://github.com/mmirandamartinez/m-wipe/issues" target="_blank">Reportar bug</a>
+  </div>
+
+  <div class="autor">
+    por <a href="https://mmirandamartinez.com" target="_blank">mmirandamartinez.com</a>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
