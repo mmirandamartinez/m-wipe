@@ -2,7 +2,7 @@
 
 ![M-Wipe Extension](icons/icon.png)
 
-Extensión para Chrome que elimina automáticamente banners de cookies, muros de pago y avisos de privacidad. Sin clics, sin interrupciones, sin aceptar nada.
+Extensión para navegadores que elimina automáticamente banners de cookies, muros de pago y avisos de privacidad. Sin clics, sin interrupciones, sin aceptar nada.
 
 > Proyecto en GitHub: [github.com/mmirandamartinez/m-wipe](https://github.com/mmirandamartinez/m-wipe)
 
